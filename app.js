@@ -1,7 +1,7 @@
-// Globals var
+
 let div = null;
 
-// Step 1 - create onload handler
+//create onload handler
 window.onload = () => {
    main();
 };
@@ -39,7 +39,7 @@ function main() {
    });
 }
 
-// step 2 - random color generator function
+//random color generator function
 function generateHexColor() {
    // #000000 #ffffff
    // 255, 255, 255 -> #FFFFFF
@@ -50,7 +50,7 @@ function generateHexColor() {
    return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
 }
 
-// step 3 - Tost message generator function
+// Tost message generator function
 function generateToastMessage(msg) {
    div = document.createElement("div");
    div.innerText = msg;
@@ -69,7 +69,7 @@ function generateToastMessage(msg) {
    document.body.appendChild(div);
 }
 
-// step 4 - hexacolor code validition function
+//hexacolor code validition function
 function isValidHex(color) {
    if (color.length !== 7) return false;
    if (color[0] !== "#") return false;
